@@ -1,4 +1,24 @@
 
+$grid-breakpoints: (
+  xs: 375px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1330px
+) !default;
+
+$container-max-widths: (
+  xs: 375px,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1330px
+) !default;
+
+
+
 /*item slider*/
 #slider-text{
   padding-top: 40px;
