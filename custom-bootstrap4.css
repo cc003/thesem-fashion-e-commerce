@@ -62,12 +62,83 @@ a {
 	color: black;
 }
 
+ul.nav {
+	background-color: black;
+	width: 100vw;
+}
+
+
+.dropdown {
+	 overflow: hidden;
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #000;
+	padding: 0;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0px 0px;
+  background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn p {
+  color: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /*xs*/
 
-nav {
-	width: 85vw;
-}
+
 
 .img-fluid {
 	height: auto;
@@ -151,8 +222,6 @@ min-height: 100%;
 .padding-top-15 {
 	padding-top: 15px;
 }
-
-
 
 .padding-10all {
 	padding: 10px;
@@ -292,6 +361,22 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
 	width: 30%
 
 }
+
+/*top ad*/
+.top-ad {
+	background-color: #ffffff;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    height: 70px;
+    background-image: url(images/Xmas_Desk2_1904x70.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+
+
 
 
 .popup {
@@ -479,11 +564,6 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
 
 /*thesem logo*/
 
-/*xs*/
-#thesem_logo {
-	width: 180px;
-	height: auto;
-}
 
 /*sm,md,lg,xl*/
 @media only screen and (min-width: 600px) {
@@ -498,63 +578,17 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
 
 
 
-/*black bar nav*/
-.nav_main {
-	width: 100%;
-	position:inherit;
-	top: auto;
-    left: auto;
-    bottom: 0px;
-    overflow: auto;
-    transform: none;
-    display: block;
-	background: #000000;
-	z-index: 2000;
-	transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
 
-.nav_bar {
-	max-width: 1120px;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-y: visible;
-    will-change: auto;
-    transform: none;
-    margin: 0px auto;
-    padding: 0px 10px;
-	height: auto;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-
-.nav-lvl-1 {
-	font-size: 14px;
-	    -webkit-box-flex: 1;
-    flex-grow: 1;
-    margin: 0px;
-	    list-style: none;
-	    display: list-item;
-    text-align: -webkit-match-parent;
-	padding: 7px 0px;
-	color: #FFFFFF;
-	
-}
-
-li.nav-lvl-1 a {
-	color: white;
-	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
-	text-transform: uppercase;
-	font-weight: 900;
-	letter-spacing: 1.7px;
-	font-size: 0.85em;
-	line-height: 200%;
-	text-rendering: optimizeSpeed;
-}
 
 .nav-link {
 	display: flex;
 	justify-content: center;
     align-items: center;
+	padding-right: 35px;
+	padding-left: 35px;
 }
+
+
 
 /*top bar nav*/
 .top-bar-nav svg {
@@ -574,11 +608,13 @@ li.nav-lvl-1 a {
 	font-size: 0.85em;
 	line-height: 200%;
 	text-rendering: optimizeSpeed;	
+	text-align: right;
 }
 
 .searchbutton {
 	border: #000000 1px solid;
 }
+
 
 
 /*nav bar footer*/
@@ -2469,6 +2505,48 @@ h22 {
 h31 {
 	font-family: 'SabonLTStd-Roman','Crimson Text', 'Garamond','Cormorant Garamond',  serif;
 	font-size: 1em;
+}
+
+.playfair {
+	
+	font-family: 'Playfair Display', serif;
+	font-size: 1.5em;
+	font-style: italic;
+	line-height: 30px;
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+		
+}
+
+.small-heading {
+	
+	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 4px;
+	font-size: 0.6em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-rendering: optimizeSpeed;
+
+}
+
+.nav-font {
+	color: white;
+	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1.7px;
+	font-size: 0.85em;
+	text-rendering: optimizeSpeed;
+	line-height: 100%;
+	align-items: center;
+	margin-bottom: 0;
 }
 
 
