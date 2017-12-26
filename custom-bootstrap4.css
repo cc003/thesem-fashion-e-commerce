@@ -97,8 +97,8 @@ ul.nav {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: white;
-	padding-top: 7.5px;
-	padding-bottom: 7.5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn p {
@@ -256,6 +256,10 @@ min-height: 100%;
 	padding-bottom: 30px;
 }
 
+.padding-top-30 {
+	padding-top: 30px;
+}
+
 .padding-bottom20 {
 	padding-bottom: 20px;
 }
@@ -266,6 +270,10 @@ min-height: 100%;
 
 .padding-100all {
 	padding: 100px;
+}
+
+.padding-bottom-100 {
+	padding-bottom: 100px;
 }
 
 .padding-60all {
@@ -370,7 +378,8 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
     padding-bottom: 0px;
     margin-bottom: 0px;
     height: 70px;
-    background-image: url(images/Xmas_Desk2_1904x70.png);
+    background-image: url(images/Landscape-banner_1900x70.jpg);
+	background-size: 1900px 70px;
     background-repeat: no-repeat;
     background-position: center;
     text-decoration: none;
@@ -449,6 +458,7 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
 	padding-left: 30%;
 	padding-right:30%;
     box-shadow: 1px 1px #f2f2f2;
+	
 	
 	
 }
@@ -605,7 +615,7 @@ div[class^="col"]{padding-left:7px; padding-right:7px;}
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
-	font-size: 0.85em;
+	font-size: 0.75em;
 	line-height: 200%;
 	text-rendering: optimizeSpeed;	
 	text-align: right;
@@ -2285,7 +2295,7 @@ h4 {
 }
 
 h5 {
-	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
+	font-family: 'futura', 'Source sans Pro', 'Georgia', serif;
 	text-transform: uppercase;
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -2299,12 +2309,12 @@ h5 {
 
 
 
-h6 {
+.h-6 {
 	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
-	font-weight: 300;
+	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 200%;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 
@@ -2515,7 +2525,7 @@ h31 {
 	line-height: 30px;
 	margin-top: 0;
 	padding-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 20px;
 	padding-bottom: 0;
 		
 }
@@ -2542,7 +2552,7 @@ h31 {
 	text-transform: uppercase;
 	font-weight: 400;
 	letter-spacing: 1.7px;
-	font-size: 0.85em;
+	font-size: 0.75em;
 	text-rendering: optimizeSpeed;
 	line-height: 100%;
 	align-items: center;
@@ -3788,9 +3798,9 @@ h4 {
 }
 
 h5 {
-	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
+	font-family: 'futura', 'Source Sans Pro', 'Georgia', serif;
 	text-transform: uppercase;
-	font-weight: 500;
+	font-weight: 200;
 	letter-spacing: 2px;
 	font-size: 0.7em;
 	line-height: 200%;
@@ -3800,12 +3810,12 @@ h5 {
 
 
 
-h6 {
+.h-6 {
 	font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 200%;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 
