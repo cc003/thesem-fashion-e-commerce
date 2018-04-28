@@ -72,6 +72,48 @@ html, body {
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
+/*pop up alert box*/
+/*top ad*/
+.top-ad {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	height: 70px;
+	background-image: url(images/Landscape-banner_1900x70.jpg);
+	background-size: 1900px 70px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-decoration: none;
+}
+.popup {
+	background-color: #EEEEEE;
+}
+/*alert box*/
+.alert {
+    opacity: 1;
+    transition: opacity 0.6s; /* 600ms to fade out */
+	margin: 0;
+	padding: 0;
+}
+/* The close button */
+.closebtn {
+    margin-right: 15px;
+    color: grey;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+/*end pop alert box*/
+
 /* The side navigation menu */
 .sidenav {
 	height: 100%; /* 100% Full-height */
@@ -422,23 +464,8 @@ div[class^="col"] {
 	border-top: 4px solid black;
 	width: 30%
 }
-/*top ad*/
-.top-ad {
-	background-color: #ffffff;
-	text-align: center;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	height: 70px;
-	background-image: url(images/Landscape-banner_1900x70.jpg);
-	background-size: 1900px 70px;
-	background-repeat: no-repeat;
-	background-position: center;
-	text-decoration: none;
-}
-.popup {
-	background-color: #EEEEEE;
-}
+
+
 .banner {
 	height: 650px;
 	width: 100vw;
