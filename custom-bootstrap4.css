@@ -47,8 +47,9 @@ end media queries */
 html, body {
 	width: 100%;
 	height: auto;
-	margin: 178 0 0 0  !important;
+	margin: 0;
 	padding: 0; 
+	margin-top: 178px;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 }
@@ -63,13 +64,17 @@ html, body {
 }
 /*xs,sm* side nav start*/
 
-/*scroll navbar*/
+/*scroll navbar occurs before id main*/
 #navbar-scroll {
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
 	background-color: #fff;
 	z-index: 3;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+.nav-up {
+	top: -178px;
 }
 
 /*pop up alert box*/
@@ -148,6 +153,9 @@ html, body {
 	font-size: 36px;
 	margin-left: 50px;
 }
+/*end nav*/
+
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	width: 100%;
