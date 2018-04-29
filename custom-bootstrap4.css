@@ -52,6 +52,10 @@ html, body {
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 }
+
+header {
+	height: 178ppx;
+}
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
@@ -94,7 +98,7 @@ html, body {
 /*alert box*/
 .alert {
     opacity: 1;
-    transition: opacity 0.6s; /* 600ms to fade out */
+    transition: opacity 0.6s; /*600ms to fade out */
 	margin: 0;
 	padding: 0;
 }
@@ -155,9 +159,36 @@ html, body {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
 	width: 100%;
-	margin-top: 178px;
+	margin-top: 160px;
 	float: right;
 	transition: margin-left .2s;
+}
+/* Small devices gap (landscape phones, 576px and up) */
+@media(min-width:523px) {
+	#main {
+	width: 100%;
+	margin-top: 133px;
+	float: right;
+	transition: margin-left .2s;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media(min-width:576px) {
+	#main {
+	width: 100%;
+	margin-top: 133px;
+	float: right;
+	transition: margin-left .2s;
+}
+}
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#main {
+	width: 100%;
+	margin-top: 183px;
+	float: right;
+	transition: margin-left .2s;
+}
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

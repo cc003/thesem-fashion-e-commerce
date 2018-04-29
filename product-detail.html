@@ -54,7 +54,7 @@
 
 <!--all content-->
 <!--content beginning div for xs, sm sliding menu left-->
-<div id="main">
+
 
 <!--top landscape ad->
 <div class="container-fluid">
@@ -64,13 +64,19 @@
 </div>
 hidden-->
 
+
+<!--start scroll navbar container-->
+<header id="navbar-scroll">
 <!--pop up-->
 <div class="container-fluid">
   <div class="row no-padding popup">
     <div class="col text-center noselect">
+     <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <p class="h-6" style="margin: 8px; font-style: italic; font-size: 0.85em; letter-spacing: 0.5px;"> Free delivery for orders over $150 in Australia, over $300 Internationally</p>
     </div>
   </div>
+</div>
 </div>
 
 <!--start upper nav sm down-->
@@ -119,9 +125,7 @@ hidden-->
 <!--end side nav-->
   
 </div>
-
 <!--end nav sm down--> 
-
 
 <!--start upper nav md up-->
 <div class="hidden-sm-down"> 
@@ -391,7 +395,13 @@ hidden-->
   <!--end black bar nav--> 
 </div>
 <!--end navbar md up--> 
+</header>
+<!--end scroll navbar container-->	
 
+
+<!--content start after nav-->
+
+<div id="main">
 
 <!--start content-->
 
