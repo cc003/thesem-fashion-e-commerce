@@ -72,45 +72,356 @@
 
 <body>
 
+<!--all content-->
+<!--content beginning div for xs, sm sliding menu left-->
+
+
+<!--top landscape ad->
+<div class="container-fluid">
+  <div class="row no-padding popup">
+    <div class="col top-ad" style=""> </div>
+  </div>
+</div>
+hidden-->
+
+
+<!--start scroll navbar container-->
+<header id="navbar-scroll">
 <!--pop up-->
 <div class="container-fluid">
-	
-	<div class="row no-padding popup">
-	
-<div class="col text-center"><h5>
-	free delivery for orders over $300 in Australia, over $400 internationally
-</h5></div>
-	
-		
-	</div>
+  <div class="row no-padding popup">
+    <div class="col text-center noselect">
+     <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <p class="h-6" style="margin: 8px; font-style: italic; font-size: 0.85em; letter-spacing: 0.5px;"> Free delivery for orders over $150 in Australia, over $300 Internationally</p>
+    </div>
+  </div>
+</div>
 </div>
 
-<!--nav-->
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand text-center" href="#"><img class="img-fluid" src="images/thesem_logo_cropped_242x70.jpg" width="125" height="auto"><h3 class="text-center">online fashion</h3></a>
+<!--start upper nav sm down-->
+<div class="hidden-md-up">
+  <div class="container-fluid" role="navigation">
+    <div class="d-flex align-items-center p-xs-3 p-sm-3 clearfix noselect"> 
+      <!--menu toggle-->
+      <div class="col float-left"> <!--open side nav element--><span onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span> </div>
+      <!--logo thesem sm-->
+      <div class="col mx-auto hidden-xs-down hidden-md-up"> <a href="index.html"><img src="images/NEW LOGO_logo_updated.svg" width="200" alt="Responsive image"></a> </div>
+      <!--logo thesem xs-->
+      <div class="col mx-auto hidden-sm-up"> <a href="index.html"><img src="images/NEW LOGO_logo_updated.svg" style="padding-top: 20px; padding-bottom: 20px;" width="165" alt="Responsive image"></a> </div>
+      <!--icons-->
+      <div class="col float-right clearfix"> 
+        <!--search-->
+        <div class="float-right">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20px" height="20px" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+            <g>
+              <path d="M945.5,962.2l-40.5-635c-1.2-10.8-10.3-19-21.2-19h-170v-85.1C713.9,105.4,618.5,10,500.8,10s-213.1,95.4-213.1,213.1v85.1H118.8c-10.8,0-20,8.1-21.2,18.9l-44,639.2c-0.7,6,1.2,12.1,5.3,16.6c4,4.5,9.8,7.1,15.9,7.1h850c0.2,0,0.3,0,0.4,0c11.8,0,21.3-9.6,21.3-21.3C946.5,966.4,946.2,964.2,945.5,962.2z M330.3,223.1c0-94.1,76.3-170.5,170.5-170.5c94.1,0,170.5,76.3,170.5,170.5v85.1H330.3V223.1z M98.6,947.4l39.2-596.6h149.9v48.4c-12.7,7.4-21.3,21.1-21.3,36.9c0,23.5,19.1,42.6,42.6,42.6c23.5,0,42.6-19.1,42.6-42.6c0-15.8-8.6-29.5-21.3-36.9v-48.4h340.9v48.4c-12.7,7.4-21.3,21.1-21.3,36.9c0,23.5,19.1,42.6,42.6,42.6c23.5,0,42.6-19.1,42.6-42.6c0-15.8-8.6-29.5-21.3-36.9v-48.4h150.9L901,947.4H98.6L98.6,947.4z"/>
+            </g>
+          </svg>
+        </div>
+        <!--shopping bag-->
+        <div class="float-right pr-3"><i class="fa fa-search" width="auto" height="20px" aria-hidden="true"></i></div>
+      </div>
+    </div>
+    <!--border black-->
+    <div class="row no-padding" style="border-bottom: 10px solid #000000; width: 100vw"></div>
+  </div>
+  
+  <!--side nav xs, sm-->
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="New in.html"><p class="nav-font-sidenav">New In</p></a>
+  <a href="#"><p class="nav-font-sidenav">Sleepwear</p></a>
+  <a href="#"><p class="nav-font-sidenav">Leather</p></a>
+  <a href="#"><p class="nav-font-sidenav">Design your own</p></a>
+  <a href="http://thesemiotics.com/" target="_blank"><p class="nav-font-sidenav">Magazine</p></a>
+  <div class="row align-items-end mt-5">
+  	<div class="col"> 
+  	 <a href="#"><p class="nav-font-sidenav">Sign In</p></a>
+  	 <a href="#"><p class="nav-font-sidenav">Register</p></a></div>
+  </div>
+</div>
+<!--end side nav-->
+  
+</div>
+<!--end nav sm down--> 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+<!--start upper nav md up-->
+<div class="hidden-sm-down"> 
+  <!--top bar - logo-->
+  <div class="container-fluid pl-5 pr-5 top-bar noselect">
+    <div class="row padding-25-tb justify-content-center">
+      <div class="col-12 col-xxl-11">
+        <div class="row no-padding align-items-center">
+          <div class="col-4 align-items-center">
+            <p class="register-font-md mb-0">$AUD<span style="padding-left: 8px; padding-right: 8px">&#124;</span>Contact Us 1800 344 212</p>
+          </div>
+          <div class="col-4 text-center"> <!--logo thesem--> 
+            <a href="index.html"><img src="images/NEW LOGO_logo_updated.svg" class="mx-auto" width="200" alt="Responsive image"></a> </div>
+          <div class="col-4 text-right top-bar-nav align-items-center">
+            <p class="register-font-md mb-0"><!--shopping bag icon-->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+                <g>
+                  <path d="M945.5,962.2l-40.5-635c-1.2-10.8-10.3-19-21.2-19h-170v-85.1C713.9,105.4,618.5,10,500.8,10s-213.1,95.4-213.1,213.1v85.1H118.8c-10.8,0-20,8.1-21.2,18.9l-44,639.2c-0.7,6,1.2,12.1,5.3,16.6c4,4.5,9.8,7.1,15.9,7.1h850c0.2,0,0.3,0,0.4,0c11.8,0,21.3-9.6,21.3-21.3C946.5,966.4,946.2,964.2,945.5,962.2z M330.3,223.1c0-94.1,76.3-170.5,170.5-170.5c94.1,0,170.5,76.3,170.5,170.5v85.1H330.3V223.1z M98.6,947.4l39.2-596.6h149.9v48.4c-12.7,7.4-21.3,21.1-21.3,36.9c0,23.5,19.1,42.6,42.6,42.6c23.5,0,42.6-19.1,42.6-42.6c0-15.8-8.6-29.5-21.3-36.9v-48.4h340.9v48.4c-12.7,7.4-21.3,21.1-21.3,36.9c0,23.5,19.1,42.6,42.6,42.6c23.5,0,42.6-19.1,42.6-42.6c0-15.8-8.6-29.5-21.3-36.9v-48.4h150.9L901,947.4H98.6L98.6,947.4z"/>
+                </g>
+              </svg>
+              <span style="padding-left: 8px; padding-right: 8px">&#124;</span> Register<span style="padding-left: 8px; padding-right: 8px">&#124;</span>Sign In</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end top bar - logo--> 
+  
+  <!--start black bar nav-->
+  <nav class="navbar">
+    <ul class="nav justify-content-center align-items-center noselect">
+     <!--dropdown 1-->
+      <div class="dropdown">
+        <button class="dropbtn">
+        <li class="nav-item"> 
+        <a class="align-middle nav-link" href="New in.html">
+        <p class="nav-font">New In</p>
+        </a>
+        </li>
+        </button>
+        <div class="dropdown-menu"> 
+      <div class="container-fluid">
+       <div class="row no-padding justify-content-start m-2 pt-3 pl-5 pr-3 m-xxl-5">
+        <div class="col-2">
+          <h3>Clothing</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Shirts</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Dresses</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Tops</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Pants</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Skirts</p></a>
+
+        </div>
+        <div class="col-2 mx-auto">
+          <h3>Accessories</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Shoes</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Bags</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Jewellery</p></a>
+        </div>
+        <div class="col-3 ml-3 mr-0 mx-auto">
+         <p class="small-heading text-center">heading</p>
+          <p class="playfair text-center">Bottom Right</p>
+          <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+        </div>
+        <div class="col-5 pl-5 col-xxl-4">
+          <img src="images/mega-menu-image3-test.jpg" class="img-fluid"  alt="Responsive image">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      <!--end dropdown 1-->
+      <!--dropdown 2-->
+      <div class="dropdown">
+        <button class="dropbtn">
+        <li class="nav-item"> 
+        <a class="align-middle nav-link" href="#">
+        <p class="nav-font">Womenswear</p>
+        </a>
+        </li>
+        </button>
+        <div class="dropdown-menu"> 
+      <div class="container-fluid">
+       <div class="row no-padding justify-content-start m-2 pt-3 pl-5 pr-3 m-xxl-5">
+        <div class="col-2">
+          <h3>Clothing</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Shirts</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Dresses</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Tops</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Pants</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Skirts</p></a>
+
+        </div>
+        <div class="col-2 mx-auto">
+          <h3>Sleepwear</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Slipdresses</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Kimonos</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Night gowns</p></a>
+        </div>
+        <div class="col-3 align-items-center ml-4 mr-0 mx-auto">
+         <p class="small-heading text-center">Holiday</p>
+          <p class="playfair text-center">New years resolutions</p>
+          <p class="h-6 text-center">Remember when you wanted what you currently have?</p>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+        </div>
+        <div class="col-4 col-xxl-3">
+          <img src="images/mega-menu-image2-test.jpg" class="img-fluid"  alt="Responsive image">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      <!--end dropdown 2-->
+		
+     <!--dropdown 3-->
+      <div class="dropdown">
+        <button class="dropbtn">
+        <li class="nav-item"> 
+        <a class="align-middle nav-link" href="#">
+        <p class="nav-font">Leather</p>
+        </a>
+        </li>
+        </button>
+        <div class="dropdown-menu"> 
+      <div class="container-fluid">
+       <div class="row no-padding justify-content-start m-2 pt-3 pl-5 pr-3 m-xxl-5">
+        <div class="col-2">
+          <h3>Shoes</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">High heels</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Mid Heels</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Flats</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Sneakers</p></a>
+        </div>
+        <div class="col-2 mx-auto">
+          <h3>Bags</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Leather Bags</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Fabric bags</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Little bags</p></a>
+        </div>
+        <div class="col-3 align-items-center ml-4 mr-0 mx-auto">
+         <p class="small-heading text-center">Growth</p>
+          <p class="playfair text-center">Stress less</p>
+          <p class="h-6 text-center">Keep what you have going, and take a break, very often.</p>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+        </div>
+        <div class="col-4 col-xxl-3">
+          <img src="images/mega-menu-image.jpg" class="img-fluid"  alt="Responsive image">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      <!--end dropdown 3-->
+    <!--dropdown 4-->
+      <div class="dropdown">
+        <button class="dropbtn">
+        <li class="nav-item"> 
+        <a class="align-middle nav-link" href="#">
+        <p class="nav-font">Design your own</p>
+        </a>
+        </li>
+        </button>
+        <div class="dropdown-menu"> 
+      <div class="container-fluid">
+       <div class="row no-padding m-2 pt-3 pl-5 pr-3 m-xxl-5 justify-content-between">
+        <div class="col-2 ml-4 ml-xxl-0">
+          <h3>Design</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Clothing</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Shoes</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Bags</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Stationery</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Home</p></a>
+        </div>
+        <div class="col-3 mr-5">
+         <p class="small-heading text-center">heading</p>
+          <p class="playfair text-center">Bottom Right</p>
+          <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+        </div>
+        <div class="col-5">
+          <img src="images/mega-menu-diy-image3.jpg" class="img-fluid"  alt="Responsive image">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      <!--end dropdown 4-->
+      
+      
+     <!--dropdown 5-->
+      <div class="dropdown">
+        <button class="dropbtn">
+        <li class="nav-item"> 
+        <a class="align-middle nav-link" href="http://thesemiotics.com/" target="_blank">
+        <p class="nav-font">Magazine</p>
+        </a>
+        </li>
+        </button>
+        <div class="dropdown-menu"> 
+      <div class="container-fluid">
+       <div class="row no-padding m-2 pt-3 pl-3 pr-3 ml-xxl-5 mt-xxl-3 mr-xxl-5 mb-xxl-3 justify-content-between">
+      <!--v1--
+       <!--mag image-
+        <div class="col-3 ml-4 ml-xxl-2 pl-4 pl-xxl-0 offset-xxl-1">
+          <img src="images/harpersbazaar-illustrationcover.jpg" class="img-fluid" style="max-height: 54vh;"  alt="Responsive image">
+        </div>
+        <!--current issue-
+        <div class="col-3 mt-5 pl-xxl-3 pt-xxl-5">
+         <p class="small-heading text-center">Current Issue</p>
+          <p class="playfair text-center">Bottom Right</p>
+          <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+        </div>
+        -->
+        
+        <!--v2-->
+        <!--current issue-->
+        <div class="col-3 mt-5 pl-2 mr-2 offset-1 ml-xxl-2 pl-xxl-0 offset-xxl-1">
+         <p class="small-heading text-center">Current Issue</p>
+          <p class="playfair text-center">Bottom Right</p>
+          <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
+          <a href="http://thesemiotics.com/" target="_blank"><p class="h-6 text-center shopnow">Read it now</p></a>
+        </div>
+         <!--mag image-->
+        <div class="col-3 ml-2 pl-xxl-3 pt-xxl-1">
+          <a href="http://thesemiotics.com/" target="_blank"><img src="images/harpersbazaar-illustrationcover.jpg" class="img-fluid" style="max-height: 54vh;"  alt="Responsive image"></a>
+        </div>
+        <!--v2 end-->
+      <div class="col-3 offset-1 pt-xxl-4 pr-xxl-2"> <div class="row no-padding"> <div class="col-6">
+          <img src="images/harpers bazaar.jpg" class="img-fluid"  alt="Responsive image">
+        </div>
+        <div class="col-6">
+          <img src="images/harpers bazaar2.jpg" class="img-fluid"  alt="Responsive image">
+        </div></div>
+       <div class="row no-padding"> 
+          <div class="col-6"><h3>Past Issues</h3>
+          <a class="dropdown-item" href="#"><p class="h-6">Issue 01</p></a>
+          <a class="dropdown-item" href="#"><p class="h-6">Issue 02</p></a>
+        </div>
+        <div class="col-6">
+        <a class="dropdown-item" href="#"><p class="h-6" style="line-height: 50%; padding-top: 16px;
+	">Issue 03</p></a>
+         <a class="dropdown-item" href="#"><p class="h-6">Issue 04</p></a>
+        	<a class="dropdown-item" href="#"><p class="h-6">Archive</p></a>
+        </div></div></div>
+        
+        
+        
+      </div>
+      </div>
+    </div>
+      </div>
+      <!--end dropdown 5-->
+      <li class="">
+        <form class="form-inline justify-content-end">
+          <input class="form-control searchbox" type="text" placeholder="Search">
+          <button class="btn btn-success searchbutton" type="submit"><i class="fa fa-search"></i></button>
+        </form>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<!--nav end-->
+  </nav>
+  <!--end black bar nav--> 
+</div>
+<!--end navbar md up--> 
+</header>
+<!--end scroll navbar container-->	
+
+
+<!--content start after nav-->
+
+<div id="main">
 
 <!--start design images-->
 <div class="container-fluid">
@@ -134,97 +445,114 @@
 
 
 
-
-
-
-<!--header image-->
-<div class="container">
-  <div class="row no-padding justify-content-center">
-		<div class="col col-sm-12 col-md-11 ">
-	  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-  
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <img class="d-block img-fluid" src="images/inspiration board - page 1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block align-items-center">
-    <h5>Collection Inspiration</h5>
-    <h4>Qi gives us life force, to let us breathe and feel light, floating and free.</h4>
-  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="images/inspiration board - page 2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="images/inspiration board - page 3.jpg" alt="Third slide">
-    </div>
-     <div class="carousel-item">
-      <img class="d-block img-fluid" src="images/inspiration board - page 4.jpg" alt="Fourth slide">
-    </div>
-     <div class="carousel-item">
-      <img class="d-block img-fluid" src="images/inspiration board - page 5.jpg" alt="Fifth slide">
-    </div>
-    
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> </div>
-  </div>
-</div>
-
-
-
-<!--text-->
-<div class="container">
-  <div class="row no-padding justify-content-center text-center">
-		<div class="col col-sm-12 col-md-11">
-		  <h3> Qi gives us life force, to let us breathe and feel light, floating and free. No burdens, just you and the crisp air around you. A weightless and purity in thought, body and spirit.</h3>
-		  <h3> Concept - Qi, an energy life flow, whirls through the space between us. It is an energy, a spirit that dances within us. It is hauntingly beautiful, light, simple, pure. Qi is a Chinese word that translates to ‘breathe’ or ‘air’ and permeates everything we do. A breath can be soft, strong, velvety. Inspired by artworks Zhang Da Qian and Toko Shinoda as well as sheer fabrics and the cathartic expression of a deep black ink stroke in a sweeping movement. We all need Qi to live, and yet in the hustle and bustle we lose ourselves. This collection encourages you to bring it back with a little bit of relaxation and indulgence in what you truly need. It is always About The Contradictions, The Fast Pace of Life + Taking it all in... never mind what they say, express yourself for your life is the only one worth fully living. Multi-use pieces, garments that make life easy, for sleeping in during a balmy beautiful summer, throw one on after a swim, step out in it after a yoga session, wine and dine in it or wear it during a plane trip. Chuck it into your little purse. Made from breathable silk and pure cotton. </h3>
+<!--xl container instagram start-->
+<div class="container-fluid">
+  <div class="row no-padding-bottom justify-content-center noselect">
+    <div class="col-lg-12 col-xl-10 col-xxl-8"> 
+      
+      <!--xs instagram-->
+      <div class="hidden-sm-up">
+      <div class="container-fluid">
+        <div class="row no-padding justify-content-center text-center">
+          <div class="col">
+            <p class="playfair" style="font-size">instagram - #the.sem</p>
+            <h3>Browse through our instagram and follow us for new work updated as soon as its drawn</h3>
+          </div>
+        </div>
+        <div class="row no-padding-top no-gutters imagethumb">
+          <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-fluid" src="images/insta-beach.jpg" alt="The Semiotics image"> </div>
+        </div>
+      </div>
 		</div>
+      
+      <!--all other sizes instagram-->
+      <div class="hidden-xs-down">
+      <div class="container-fluid">
+        <div class="row no-padding justify-content-center text-center">
+          <div class="col">
+            <h9>#the.sem</h9>
+            <h3>Browse through our instagram and follow us for new work updated as soon as its drawn</h3>
+          </div>
+        </div>
+        <div class="row no-padding-top no-gutters imagethumb">
+          <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-fluid" src="images/insta-beach.jpg" alt="The Semiotics image"> </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-fluid" src="images/insta-fashion.jpg" alt="The Semiotics image"> </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-fluid" src="images/insta-seafolly.jpg" alt="The Semiotics image"> </div>
+          <div class="col-xs-2 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img class="img-fluid" src="images/insta-opening.jpg" alt="The Semiotics image"> </div>
+        </div>
+      </div>
+		</div>
+      
+      <!--xl container--> 
+    </div>
   </div>
+</div>
+<!--xl container end--> 
+
+<!--back to the top start-->
+<div class="container-fluid"><div class="row">
+  <div class="col text-center" style="text-decoration: underline;"> <a href="index.html"><p class="h-6">Back to the top</p></a></div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid no-padding nav-social">
+  <div class="row footer-padding justify-content-center align-items-start noselect">
+   <!--logo thesem-->
+    <div class="footer-col col-12 col-md-3 footer-left text-center padding-10-tb"> <a href="index.html"><img src="images/thesem_logo_white_transparent.png" class="footer-logo img-fluid text-center mx-auto" alt="logo-white" width="150"></a> </div>
+    <div class="footer-col col col-md-6 text-center">
+      <div class="row menu-left text-center mx-auto">
+        <h7>thesem is a high end Australian designed fashion that is kind to the skin and passionate in life and mind.</h7>
+      </div>
+      <div class="row menu-left text-center">
+        <ul class="nav menu-items justify-content-center">
+          <li class="active"><a href="#"><span class="navfont-footer">About</span></a></li>
+          <li><a href="#"><span class="navfont-footer">Vision</span></a></li>
+          <li><a href="#"><span class="navfont-footer">Press</span></a></li>
+          <li><a href="#"><span class="navfont-footer">Contact</span></a></li>
+        </ul>
+        <div class="col text-center padding-top-30">
+          <h7 class="copyright text-left">©2017 copyright thesemfashion</h7>
+        </div>
+      </div>
+    </div>
+    <div class="footer-col col col-md-3">
+      <h3 class="text-center">Follow Us</h3>
+      <div class="col footerbottom-social-icons">
+        <ul class="footer-social-icons">
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-rss"></i></a></li>
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-youtube-play"></i></a></li>
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-instagram"></i></a></li>
+          <li><a href="" class="footer-social-icon"> <i class="fa fa-medium"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row no-padding text-center justify-content-center">
+    <div class="col">
+      <h5> <span style="color: grey"> Designed and developed by </span> tinestudios.com.au </h5>
+    </div>
+  </div>
+</footer>
+
+<!--content ending div-->
 </div>
 
 
 
-
-
-<!--banner-->
-<div class="container"><div class="row justify-content-center"><div class="col"><div class="jumbotron jumbotron-fluid banner3">
-  <div class="container text-center align-items-center">
-   
-    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Discover New</a>
-  </p>
-  </div>
-</div></div></div></div>
+<!--end all content-->
 
 </body>
 
-<!--javascript bootstrap 3.2.0-->
-<!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!--javascript bootstrap 4 alpha-->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<!--jQuery-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- my custom javascript -->
 <script src="custom.js"></script>
-
 
 </html>
