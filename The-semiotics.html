@@ -51,10 +51,9 @@
 </head>
 
 <body>
-
 <!--all content-->
 <!--content beginning div for xs, sm sliding menu left-->
-<div id="main">
+
 
 <!--top landscape ad->
 <div class="container-fluid">
@@ -64,13 +63,19 @@
 </div>
 hidden-->
 
+
+<!--start scroll navbar container-->
+<header id="navbar-scroll">
 <!--pop up-->
 <div class="container-fluid">
   <div class="row no-padding popup">
     <div class="col text-center noselect">
+     <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <p class="h-6" style="margin: 8px; font-style: italic; font-size: 0.85em; letter-spacing: 0.5px;"> Free delivery for orders over $150 in Australia, over $300 Internationally</p>
     </div>
   </div>
+</div>
 </div>
 
 <!--start upper nav sm down-->
@@ -105,11 +110,11 @@ hidden-->
   <!--side nav xs, sm-->
   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#"><p class="nav-font-sidenav">New In</p></a>
+  <a href="New in.html"><p class="nav-font-sidenav">New In</p></a>
   <a href="#"><p class="nav-font-sidenav">Sleepwear</p></a>
   <a href="#"><p class="nav-font-sidenav">Leather</p></a>
   <a href="#"><p class="nav-font-sidenav">Design your own</p></a>
-  <a href="#"><p class="nav-font-sidenav">Magazine</p></a>
+  <a href="http://thesemiotics.com/" target="_blank"><p class="nav-font-sidenav">Magazine</p></a>
   <div class="row align-items-end mt-5">
   	<div class="col"> 
   	 <a href="#"><p class="nav-font-sidenav">Sign In</p></a>
@@ -117,11 +122,8 @@ hidden-->
   </div>
 </div>
 <!--end side nav-->
- 
-  
   
 </div>
-
 <!--end nav sm down--> 
 
 <!--start upper nav md up-->
@@ -186,7 +188,7 @@ hidden-->
          <p class="small-heading text-center">heading</p>
           <p class="playfair text-center">Bottom Right</p>
           <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
-          <a href="#"><p class="h-6 text-center" style="text-decoration: underline">Shop Now</p></a>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
         </div>
         <div class="col-5 pl-5 col-xxl-4">
           <img src="images/mega-menu-image3-test.jpg" class="img-fluid"  alt="Responsive image">
@@ -228,7 +230,7 @@ hidden-->
          <p class="small-heading text-center">Holiday</p>
           <p class="playfair text-center">New years resolutions</p>
           <p class="h-6 text-center">Remember when you wanted what you currently have?</p>
-          <a href="#"><p class="h-6 text-center" style="text-decoration: underline">Shop Now</p></a>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
         </div>
         <div class="col-4 col-xxl-3">
           <img src="images/mega-menu-image2-test.jpg" class="img-fluid"  alt="Responsive image">
@@ -269,7 +271,7 @@ hidden-->
          <p class="small-heading text-center">Growth</p>
           <p class="playfair text-center">Stress less</p>
           <p class="h-6 text-center">Keep what you have going, and take a break, very often.</p>
-          <a href="#"><p class="h-6 text-center" style="text-decoration: underline">Shop Now</p></a>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
         </div>
         <div class="col-4 col-xxl-3">
           <img src="images/mega-menu-image.jpg" class="img-fluid"  alt="Responsive image">
@@ -304,7 +306,7 @@ hidden-->
          <p class="small-heading text-center">heading</p>
           <p class="playfair text-center">Bottom Right</p>
           <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
-          <a href="#"><p class="h-6 text-center" style="text-decoration: underline">Shop Now</p></a>
+          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
         </div>
         <div class="col-5">
           <img src="images/mega-menu-diy-image3.jpg" class="img-fluid"  alt="Responsive image">
@@ -321,7 +323,7 @@ hidden-->
       <div class="dropdown">
         <button class="dropbtn">
         <li class="nav-item"> 
-        <a class="align-middle nav-link" href="The-semiotics.html">
+        <a class="align-middle nav-link" href="http://thesemiotics.com/" target="_blank">
         <p class="nav-font">Magazine</p>
         </a>
         </li>
@@ -349,11 +351,11 @@ hidden-->
          <p class="small-heading text-center">Current Issue</p>
           <p class="playfair text-center">Bottom Right</p>
           <p class="h-6 text-center">Newly stocked items, freshly designed and customisable.</p>
-          <a href="#"><p class="h-6 text-center shopnow">Shop Now</p></a>
+          <a href="http://thesemiotics.com/" target="_blank"><p class="h-6 text-center shopnow">Read it now</p></a>
         </div>
          <!--mag image-->
         <div class="col-3 ml-2 pl-xxl-3 pt-xxl-1">
-          <img src="images/harpersbazaar-illustrationcover.jpg" class="img-fluid" style="max-height: 54vh;"  alt="Responsive image">
+          <a href="http://thesemiotics.com/" target="_blank"></a><img src="images/harpersbazaar-illustrationcover.jpg" class="img-fluid" style="max-height: 54vh;"  alt="Responsive image"></a>
         </div>
         <!--v2 end-->
       <div class="col-3 offset-1 pt-xxl-4 pr-xxl-2"> <div class="row no-padding"> <div class="col-6">
@@ -392,9 +394,13 @@ hidden-->
   <!--end black bar nav--> 
 </div>
 <!--end navbar md up--> 
+</header>
+<!--end scroll navbar container-->	
 
 
-<!--start content-->
+<!--content start after nav-->
+
+<div id="main">
  
  <!--product carousel-->
 <div class="container-fluid">
