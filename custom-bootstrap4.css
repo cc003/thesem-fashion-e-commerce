@@ -54,7 +54,7 @@ html, body {
 }
 
 header {
-	height: 178ppx;
+	height: 178px;
 }
 .noselect {
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -308,7 +308,7 @@ ul.nav {
 
 
 
-
+/*custom bootstrap grid*/
 /*xs*/
 .img-fluid {
 	height: auto;
@@ -500,8 +500,9 @@ div[class^="col"] {
 	border-top: 4px solid black;
 	width: 30%
 }
+/*custom bootstrap grid end*/
 
-
+/*banner css*/
 .banner {
 	height: 650px;
 	width: 100vw;
@@ -540,9 +541,17 @@ div[class^="col"] {
 	background-size: cover;
 	color: white;
 }
+/*banner css end*/
+
+/*background colours*/
 .descriptionbox {
 	background-color: lightgray;
 }
+
+.bg-colourblock-maroon {
+	background-color: #750608;
+}
+/*end background colours*/
 
 /*buttons*/
 .btn {
@@ -576,8 +585,10 @@ div[class^="col"] {
 	border: black solid 1px;
 	color: black;
 }
+/*buttons end*/
 
-/*top on top of image*/
+/*buttons and text on top of image*/
+/*text on top of image*/
 .banner-box {
 	position: relative;
 	text-align: center;
@@ -595,8 +606,7 @@ div[class^="col"] {
 	padding-right: 30%;
 	box-shadow: 1px 1px #f2f2f2;
 }
-
-
+/*end text on top of image*/
 /*button over image 2*/
 .button-banner {
 	position: relative;
@@ -624,14 +634,8 @@ div[class^="col"] {
 	margin-right: 10px;
 	text-rendering: optimizeSpeed;
 }
+/*end button over image 2*/
 
-
-
-
-
-.bg-colourblock-maroon {
-	background-color: #750608;
-}
 .textover-imgrow {
 	display: block;
 }
@@ -656,6 +660,9 @@ div[class^="col"] {
 .img-under {
 	z-index: -300;
 }
+/*end buttons and text on top of image*/
+
+
 
 
 /* start product detail bootstrap 4 carousel show 2 https://www.codeply.com/go/sShh7372V1*/
@@ -739,7 +746,65 @@ div[class^="col"] {
 }
 /* end product detail bootstrap 4 carousel show 2*/
 
-
+/*start product detail custom select form - colour, size*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: 'futura', 'Cormorant Garamond', 'Georgia', serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 1em;
+	color: black;
+	border: none;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: white;
+  top: 0;
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #000;
+  padding: 15px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 140%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/*end product detail custom select form - colour, size*/
 
 
 
@@ -818,6 +883,9 @@ div[class^="col"] {
 	left: -25%;
 }
 }
+/*end slider 4 items*/
+/*end carousel*/
+
 
 /*thesem logo*/
 
@@ -834,7 +902,7 @@ div[class^="col"] {
 
 
 
-
+/*start navbar top*/
 .nav-link {
 	display: flex;
 	justify-content: center;
@@ -863,9 +931,9 @@ div[class^="col"] {
 .searchbutton {
 	border: #000000 1px solid;
 }
+/*end navbar top*/
 
-/*nav bar footer*/
-
+/*start nav bar footer*/
 #navbar-primary .navbar-nav {
 	width: 100%;
 	padding-top: 2%;
@@ -917,7 +985,7 @@ footer {
 }
 /*end navbar footer*/
 
-/*start codepen navbar*/
+/*start codepen social navbar*/
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 a {
@@ -1037,7 +1105,7 @@ ul.social-icons {
 .fa-medium:hover {
 	background-color: #e25714;
 }
-/*end codepen navbar*/
+/*end codepen social navbar*/
 
 
 
@@ -1066,6 +1134,7 @@ ul.social-icons {
 	padding: 60px;
 	box-shadow: 0 0 30px 5px rgba(95, 124, 179, 0.15);
 }
+/*end highlight*/
 
 /*bootstrap fix carousel image sizing*/
 .carousel-item.active, .carousel-item-next, .carousel-item-prev {
@@ -1129,6 +1198,8 @@ ul.social-icons {
 	-moz-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
+
+/*start hero*/
 .hero {
 	position: relative;
 	width: 50%;
@@ -1187,8 +1258,6 @@ ul.social-icons {
 	top: 20%;
 }
 }
-
-
 
 .blackbox {
 	margin: 5px;
@@ -1257,6 +1326,7 @@ ul.social-icons {
 	transform-origin: 20% 40%;
 	z-index: -100;
 }
+/*end hero*/
 
 /*sign up newsletter start*/
 /*sign up mobile xs*/
@@ -1731,7 +1801,7 @@ h1.livetype {
 
 
 
-/*footer styles*/
+/*start footer styles*/
 
 footer {
 	background-color: black;
